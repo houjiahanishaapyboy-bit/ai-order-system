@@ -3,26 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>点餐成功</title>
+    <title>菜单选择</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background: linear-gradient(180deg, #FF7F50, #FF9C56);
             color: white;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 20px;
         }
-        h1 {
-            font-size: 2rem;
+        .menu-item {
+            margin: 20px;
             text-align: center;
+            width: 250px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        .customize-btn {
+            background-color: #ff5722;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .customize-btn:hover {
+            background-color: #e64a19;
+        }
+        .confirm-btn {
+            padding: 15px 30px;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .confirm-btn:hover {
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
-    <h1>侯傢瀚大帅哥</h1>
+    <div class="menu-item">
+        <img src="1.png" alt="巨无霸">
+        <h2>巨无霸</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+    <div class="menu-item">
+        <img src="2.png" alt="薯条">
+        <h2>薯条</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+    <div class="menu-item">
+        <img src="3.png" alt="麦辣鸡腿汉堡">
+        <h2>麦辣鸡腿汉堡</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+    <div class="menu-item">
+        <img src="4.png" alt="安格斯MAX厚牛堡">
+        <h2>安格斯MAX厚牛堡</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+    <div class="menu-item">
+        <img src="5.png" alt="麦满分家族">
+        <h2>麦满分家族</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+    <div class="menu-item">
+        <img src="6.png" alt="麦麦脆汁鸡">
+        <h2>麦麦脆汁鸡</h2>
+        <button class="customize-btn" onclick="alert('无')">定制</button>
+    </div>
+
+    <button class="confirm-btn" onclick="window.location.href='final.html'">确定</button>
 </body>
 </html>
