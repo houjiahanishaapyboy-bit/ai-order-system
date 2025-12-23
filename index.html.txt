@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI自助点餐</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #FF7F50, #FF9C56);
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        input {
+            padding: 10px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            width: 80%;
+            max-width: 400px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>店铺 AI 自助下单系统</h1>
+        <input type="number" id="orderCode" placeholder="请输入预定号码" />
+        <button onclick="validateOrder()">确认</button>
+    </div>
+
+    <script>
+        function validateOrder() {
+            var orderCode = document.getElementById('orderCode').value;
+            if (orderCode === '123456') {
+                window.location.href = "page2.html"; // 跳转到下一个页面
+            } else {
+                alert('输入错误，请重新输入！');
+            }
+        }
+    </script>
+</body>
+</html>
